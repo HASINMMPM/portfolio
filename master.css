@@ -1,0 +1,269 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to top right, greenyellow , rgb(133, 248, 133));
+}
+.site{
+    max-width:1125px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: linear-gradient(to top right, greenyellow , rgb(133, 248, 133));
+    padding: .7rem;
+
+}
+
+header{
+  
+    background-color: rgb(79, 145, 252);
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    width: 100%;
+    max-width: 1125px;
+    color: #fff;
+
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem 0px;
+
+
+}
+
+.profile img{
+    height: 150px;
+    object-fit: contain;
+    margin: 0rem 2rem;
+    
+    
+}
+
+.social{
+    padding: .5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    grid-gap: 20px;
+
+
+}
+.social img{
+    object-fit: contain;
+    width: 1.5rem;
+    margin-right: 10px;
+   
+}
+header a{
+    text-decoration: none;
+    color: rgb(79, 145, 252);
+    background-color: rgb(255, 255, 255);
+    padding: .25rem;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+section{
+    margin-top: 1rem;
+    padding: 1rem;
+    border-end-start-radius: 1rem;
+}
+section h2 {
+    padding: .5rem 0px;
+    font-weight: 400px;
+    font-size: 30px ;
+}
+.summary{
+    background-image: linear-gradient(to top right, greenyellow , rgb(133, 248, 133));
+    font-size: 20px ;
+}
+
+.projects{
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 1rem;
+    
+}
+.projects img{
+   width: 100%;
+    object-fit: contain;
+    height: 100%;
+
+
+}
+.projectone{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(212, 255, 147);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: .2rem;
+    padding: .5rem;
+    box-shadow: -5px 5px 15px  rgb(103, 112, 76);
+}
+.projectone{
+    width: 100%;
+}
+.projectone button{
+    height: 2rem;
+    margin-top: .5rem;
+}
+.projectone button:hover{
+    background-color:rgb(133, 248, 133);
+    transform: scale(.9);
+    color:  rgb(79, 145, 252);
+    font-size: large;
+    font-weight: 600;
+
+}
+.projectone a{
+   text-decoration: none; 
+}
+.projectpart{
+    background-image: linear-gradient(to bottom left, greenyellow , rgb(133, 248, 133));
+}
+
+#edu{
+    background-image: linear-gradient(to top right, greenyellow , rgb(133, 248, 133));
+   
+}
+
+.itemone{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: rgb(133, 248, 133);
+}
+.itemone img{
+    object-fit: contain;
+    height: 5rem;
+    margin-right: 1rem;
+}
+.items{
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    grid-gap: 20px;
+}
+
+.entri{
+    border-radius: 50%;
+}
+
+#edu h3{
+    font-weight: 500;
+
+}
+#edu span{
+    font-weight: 600;
+}
+ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+}
+li{
+    font-size: 20px;
+}
+li::before {
+    content: "\1F511"; /* UTF-8 checkmark symbol */
+    margin-right: 8px; /* Add some spacing between the checkmark and the list item text */
+  }
+#skill{
+    background-image: linear-gradient(to bottom left, greenyellow , rgb(133, 248, 133));
+
+}
+#jspart{
+    background-image: linear-gradient(to top right, greenyellow , rgb(133, 248, 133));
+    
+}
+.num{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: .5rem;
+     
+}
+.subbtn{
+    margin-top: .5rem;
+    padding: .5rem;
+    background-color: rgb(79, 145, 252);
+    color: #fff;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.subbtn:hover{
+    color: rgb(79, 145, 252);
+    background-color: #fff;
+}
+.num input{
+    padding: .3rem;
+    margin-left: .5rem;
+    background-color:rgb(133, 248, 133);
+}
+form{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+#jspart h3{
+    margin-top: 1rem;
+    font-size: 25px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+    .projects {
+        grid-template-columns: 1fr; /* Change to a single column for screens below 576px */
+    }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+    .projects {
+        grid-template-columns: 1fr 1fr; /* Show first 2 columns in a row for screens between 577px and 768px */
+    }
+}
+
+@media (max-width: 576px) {
+    .social {
+      display: flex;
+      flex-direction: column;
+    }
+}
+@media (max-width: 770px) {
+    .items {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    ul{
+        grid-template-columns: 1fr;
+    }
+}
